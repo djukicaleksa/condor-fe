@@ -1,0 +1,21 @@
+$primary: #da3376;
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'mixins';
+@import 'scrollbar';
+h2 {
+  font-size: 4.0rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+.container-fluid {
+  padding:0px;
+
+  @include sm {
+    padding-left:15px;
+    padding-right:15px;
+  }
+}

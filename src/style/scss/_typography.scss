@@ -1,0 +1,23 @@
+@import 'spacers';
+@import 'fonts';
+
+$font-default: 'Quick Sand', Arial, sans-serif !default;
+
+@mixin text-strong() {
+  font-weight: 700;
+}
+
+@mixin higlight() {
+  color: $primary;
+  font-weight: 800;
+}
+
+@mixin text-bold() {
+  font-weight: 500;
+}
+
+@mixin font-defualt() {
+  font-family: $font-default;
+  font-size: 1.3rem;
+  -webkit-font-smoothing: auto;
+}

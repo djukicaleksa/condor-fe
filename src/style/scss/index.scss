@@ -1,0 +1,150 @@
+@import 'mixins';
+@import 'spacers';
+@import 'typography';
+@import 'overrides';
+@import 'sections';
+
+@for $flex from 1 through 5 {
+  .flex-#{$flex} {
+    flex: $flex;
+  }
+}
+
+// Spacer classes
+@for $space from 1 through 10 {
+  .mt-#{$space} {
+    margin-top: $space * $spacer-4;
+  }
+
+  .mr-#{$space} {
+    margin-right: $space * $spacer-4;
+  }
+
+  .mb-#{$space} {
+    margin-bottom: $space * $spacer-4;
+  }
+
+  .ml-#{$space} {
+    margin-left: $space * $spacer-4;
+  }
+
+  .mx-#{$space} {
+    margin-left: $space * $spacer-4;
+    margin-right: $space * $spacer-4;
+  }
+
+  .my-#{$space} {
+    margin-top: $space * $spacer-4;
+    margin-bottom: $space * $spacer-4;
+  }
+
+  .pt-#{$space} {
+    padding-top: $space * $spacer-4;
+  }
+
+  .pr-#{$space} {
+    padding-right: $space * $spacer-4;
+  }
+
+  .pb-#{$space} {
+    padding-bottom: $space * $spacer-4;
+  }
+
+  .pl-#{$space} {
+    padding-left: $space * $spacer-4;
+  }
+
+  .py-#{$space} {
+    padding-top: $space * $spacer-4;
+    padding-bottom: $space * $spacer-4;
+  }
+
+  .px-#{$space} {
+    padding-left: $space * $spacer-4;
+    padding-right: $space * $spacer-4;
+  }
+}
+
+.highlighted {
+  @include higlight;
+}
+
+.xy-center {
+  @include xy-center;
+}
+
+.shadow-section {
+  box-shadow: 0 7px 5px -5px lightgray;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-visible {
+  display: visible;
+}
+
+.flip {
+  transform: rotate(-180deg);
+}
+
+.app {
+  @include font-defualt();
+
+  ul {
+    padding: $spacer-0;
+
+    .hash-bullet {
+      display: inline;
+      list-style-image: url('../../assets/images/hashtag-solid.svg');
+      float: left;
+    }
+  }
+}
+
+.app-header {
+  border-top: 6px solid $primary;
+
+  &__logo-image {
+    padding: $spacer-6 $spacer-0;
+    max-width: 200px;
+    @include sm {
+      max-width: 300px;
+    }
+  }
+}
+
+.app-banner {
+  background-image: url(../../assets/images/bg.png);
+
+  &__gradient-top {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    );
+    height: 75px;
+  }
+
+  &__gradient-bottom {
+    background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    );
+    height: 75px;
+  }
+
+  &__content {
+    font-size: $spacer-50;
+    font-weight: 300;
+    height: 50vh;
+    @include xy-center;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 46px;
+  }
+}

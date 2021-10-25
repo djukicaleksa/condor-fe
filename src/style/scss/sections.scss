@@ -1,0 +1,76 @@
+.app-section {
+  text-align: center;
+  padding: $spacer-48 $spacer-0;
+
+  h2,
+  h3 {
+    font-weight: 700;
+  }
+
+  h2 {
+    margin-bottom: $spacer-32;
+  }
+
+  .sub-title {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+.app-services {
+  &__icon {
+    font-size: 3em;
+  }
+
+  &__item {
+    @include sm {
+      padding: 120px 40px;
+    }
+    padding: 30px 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: space-between;
+  }
+}
+
+.app-careers {
+  text-align: center;
+
+  &__item {
+    background: rgba(0, 0, 0, 0.02);
+    border: 2px solid rgba(0, 0, 0, 0.01);
+    border-radius: 10px;
+    margin: 0 0 15px 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__toggler {
+    width: 100%;
+    background: transparent;
+  }
+
+  &__details {
+    padding-left: 20px;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.app-contact {
+  &__icon {
+    font-size: 4em;
+  }
+
+  &__google-map {
+    width: calc(100%-20px);
+    height: 300px;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "condor-bootstrap-jquery",
+  "version": "1.0.0",
+  "description": "Condor applicant task demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}
