@@ -4,11 +4,13 @@
   "description": "Condor applicant task demo",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "live-server --entry-file=./public/index.html"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.0.0"
-  }
+  },
+  "devDependencies": {}
 }
